@@ -17,10 +17,23 @@ body {
     color: #3a3a3a;
     font-family: 'Lato', sans-serif;
 }
-
-#reasons {
+/* general styles*/
+#reasons h2 {
     width: 90px;
     margin: 20px auto;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 280px;
+}
+
+#benefits-physical>div,
+#benefits-mental>div {
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+#benefits p {
+    padding: 0 20px;
 }
 
 /* Header */
@@ -39,6 +52,11 @@ header {
 header a {
     text-decoration: none;
     color: inherit;
+}
+
+hr {
+    border-top: 1px solid #3a3a3a;
+    margin: 5px 0;
 }
 
 h1 {
