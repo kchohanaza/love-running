@@ -132,6 +132,41 @@ main {
     padding-left: 10px;
 }
 
+#cover-text>h2,
+#cover-text>h3 {
+    color: #ffffff;
+}
+/* Reasons section */
+#reasons {
+    width: 90%;
+    margin: 20px auto;
+}
+
+#reasons h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 280%;
+}
+
+
+
+#circle-cover-bg {
+    background-color: url(../images/reasons-image.webp) no-repeate top center/ cover;
+    height: 90vw;
+    width: 90vw;
+    margin-bottom: 20px;
+    border-radius: 50%; /* by adding radius border makes the squre image into a circle*/
+    max-width: 300%;
+    max-height: 300%; 
+}
+/* enables the flexbox layout mode, allowing you to manipulate elements' alignment, spacing, and order within a containe*/ 
+#benefirs-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+
 #cover-text > h2, #cover-text > h3 {
 
  color: #ffffff;   
