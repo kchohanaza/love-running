@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
 /* Asterisk wildcard selector to override default styles added by the browser */
-* {
+ {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -16,6 +16,11 @@ body {
     /* Generic project styles */
     color: #3a3a3a;
     font-family: 'Lato', sans-serif;
+}
+
+#reasons {
+    width: 90px;
+    margin: 20px auto;
 }
 
 /* Header */
@@ -101,8 +106,18 @@ main {
 
     background-color: rgba(241, 109, 107, .7);
     font-size: 130%;
+    position: absolute;
+    bottom: 30px;
+    width: 80%;
+    min-height: 200px;
+    padding: top 40px; 
+    padding-left: 10px;
 }
 
+#cover-text > h2, #cover-text > h3 {
+
+ color: #ffffff;   
+}
 /* Footer */
 #social-networks {
     text-align: center;
