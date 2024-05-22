@@ -158,6 +158,12 @@ main {
     border-radius: 50%; /* by adding radius border makes the squre image into a circle*/
     max-width: 300%;
     max-height: 300%; 
+
+    #benefits-image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 /* enables the flexbox layout mode, allowing you to manipulate elements' alignment, spacing, and order within a containe*/ 
 #benefirs-image {
@@ -226,7 +232,30 @@ main {
         width: 300px;
         right: 50px;
     }
+
 }
+
+/*reasons section */
+ #benefits-physical,
+ #benefits-mental {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+ }
+
+ #benefits-physical > div,
+ #benefits-mental > div {
+    width: 75%;
+ }
+
+
+ #benefits-mental > div {
+    text-align: end;
+    align-self: flex-end;
+
+ }
+
 
 /* Large devices (laptops and desktops, 992px and up) */
 @media screen and (min-width: 992px) {
@@ -234,3 +263,32 @@ main {
         border-bottom: 1px solid #3a3a3a;
     }
 }
+
+
+@media screen and (min-width: 1200px) {    
+    /* Reasons section */
+    #benefits {
+        display: flex;
+        flex-direction: row;
+    }
+    /* flex:1 property in CSS is a shorthand for the flex-grow property. 
+    which specifies how much of the available space within a container an element should take up, relative to the other elements.*/
+
+    #benefits > div {
+        flex: 1;
+    }
+
+     #benefits-image {
+        order: 0;
+     }
+     #benefits-mental {
+        order: 1;
+    }
+    #benefits-mental > div {
+        align-self: flex-start;
+    }
+
+    #benefits-physical > div {
+        align-self: flex-end;
+    }
+
