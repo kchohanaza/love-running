@@ -108,8 +108,15 @@ nav {
 /* Main content */
 main {
     /* Make main element take up any surplus space to push footer down */
-    flex: 1 0 auto;
+
+    /* add margin at the top to prevent content from being covered by the header */
+
+    /* enable flex propertise for child elements */ 
     margin-top: 47px;
+    flex: 1 0 auto;
+    display: flex; 
+    flex-direction: column;
+   
 }
 
 /* Hero section */
@@ -124,11 +131,11 @@ main {
 
     background-color: rgba(241, 109, 107, .7);
     font-size: 130%;
-    position: absolute;
+    position: relative;
     bottom: 30px;
     width: 80%;
     min-height: 200px;
-    padding: top 40px; 
+    padding-top:  40px; 
     padding-left: 10px;
 }
 
@@ -274,6 +281,9 @@ main {
     /* flex:1 property in CSS is a shorthand for the flex-grow property. 
     which specifies how much of the available space within a container an element should take up, relative to the other elements.*/
 
+
+
+    /* All of these codes should be at bthe very bottom of your css file, because it is for the largest screen size*/
     #benefits > div {
         flex: 1;
     }
